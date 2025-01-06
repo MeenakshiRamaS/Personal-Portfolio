@@ -3,9 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Maven Pro' rel='stylesheet'>
+
 </head>
 <body>
-    <h1>Hello World</h1>
+    <nav>
+    
+    <ul class = "links">
+        <a href = "#home">Home</a>
+        <a href = "#about">About</a>
+        <a href = "#coursework">Coursework</a>
+        <a href = "#skills">Skills</a>
+        <a href = "#projects">Experiences</a>
+    </ul>
+    <i class='bx bx-menu-alt-right' id = "menu"></i>
+
+    </nav>
+
+    <section id = "home">
+        <img src = "headshot.png" alt = ""/>
+        <div class = "info-box">
+            <h1><span>Hello, I'm Meena</span></h1>
+            <h3>CS @ UMD</h3>
+
+        </div>
+
+        <div class = "btn-box">
+            <a class = "btn" href = "./resume_portfolio.pdf" target = "_blank">Resume</a>
+            <a class = "btn" href = "https://www.linkedin.com/in/meenakshi-r-a71296243/" target = "_blank">LinkedIn</a>
+            <a class = "btn" href = "https://github.com/MeenakshiRamaS" target = "_blank">GitHub</a>
+        </div>
+    </section>
+    <section id = "about">
+        <div class = "about-box">
+            <img src = "funimg.JPG" alt = ""/>
+            <p>Hello! I'm Meenakshi (Meena), currently studying computer science at
+                the University of Maryland-College Park. I intend to minor in
+                 Business Analytics and am also part of the QUEST Honors College (Cohort 44).
+                 I'm currently exploring internships and other ways to apply my skills.
+                 I would love to connect on LinkedIn and feel free reach me via email.
+                Please keep scrolling to learn more about my experiences, skills, and some personal projects!
+            </p>
+        </div>
+        <div class = "coursework" id = "coursework">
+            <h1><span>Relevant Coursework</span></h1>
+            <ul>
+                <li>
+                    <a class="course-left">Object-Oriented Programming 1 & 2</a>
+                </li>
+                <li>
+                    <a class="course-left"></i>Introduction to Computer Systems</a>
+                </li>
+                <li>
+                    <a class="course-left"></i>Discrete Structures</a>
+                </li>
+                <li>
+                    <a class="course-middle">Linear Algebra</a>
+                </li>
+                <li>
+                    <a class="course-middle"></i>Applied Probability and Statistics</a>
+                </li>
+                <li>
+                    <a class="course-middle"></i>Python Programming for Data Science</a>
+                </li>
+                <li>
+                    <a class="course-right">Current: Algorithms</a>
+                </li>
+                <li>
+                    <a class="course-right"></i>Current: Organization of Programming Languages</a>
+                </li>
+                <li>
+                    <a class="course-right"></i>Introduction to Business Value Chain</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id = "skills">
+        <div class="skills-box">
+            <div class="skills-info">
+                <h1><span>Technical Skills</span></h1>
+            </div>
+            <div class = "my_skills">
+                <ul>
+                    <li>
+                        <a class="my_skills">Java</a>
+                    </li>
+                    <li>
+                        <a class="my_skills"></i>Python</a>
+                    </li>
+                    <li>
+                        <a class="my_skills"></i>R/RStudio</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">C Programming Language</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">AVR Assembly</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Linux</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">HTML/CSS</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">AWS Cloud Practitioner</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">React</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Adobe</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Figma</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Learning: Javascript</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Learning: Node.js</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Learning: Rust</a>
+                    </li>
+                    <li>
+                        <a class="my_skills">Learning: Rust</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id = "projects">
+        <h1 class = "header"><span>Experiences</span></h1>
+        <div class = "projects-container">
+            <div class = "box">
+                <h1><span>Dream Jar</span></h1>
+                <p>I worked with team members as part of a Capital One Fintech Future Hackathon to build a web and mobile application, Dream Jar, for collaborative investment and budgeting. We presented project to group of over 50 people and won 2nd place!</p>
+                <div class = "box-content">
+                    <div class = "left-col">
+                        <img src = "dreamjar.png" alr = ""/>
+                    </div>
+                    <div class = "right-col">
+                        <h2><span>Technologies</span></h2>
+                        <ul class = "tech">
+                            <li>React Native</li>
+                            <li>Javascript</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "box">
+                <h1><span>AWS Community Day</span></h1>
+                <p>As President of AWS Cloud Club at UMD, I had the opportunity to do two workshops, Linux CLI Workshop for EC2 Instances and Infrastructure as Code Workshop with AWS CloudFormation, at the Annual DMV AWS Community Day 2024. I worked with my fellow co-captains and the AWS Cloud Clubs Director!</p>
+                <div class = "box-content">
+                    <div class = "left-col">
+                        <img src = "awspic.jpg" alr = ""/>
+                    </div>
+                    <div class = "right-col">
+                        <h2><span>Technologies</span></h2>
+                        <ul class = "tech">
+                            <li>Amazon EC2</li>
+                            <li>AWS CloudFormation</li>
+                            <li>Linux</li>
+                            <li>YAML</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "box">
+                <h1><span>Personal Portfolio</span></h1>
+                <p>This portfolio project was a wonderful opportunity for me to practice my web-development skills using HTML, CSS, and Javascript. I intend to expand this website in the future as I continue to grow and learn more!</p>
+                <div class = "box-content">
+                    <div class = "right-col">
+                        <h2><span>Technologies</span></h2>
+                        <ul class = "tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class = "col-left">
+            <div class = "col-box">
+                <span><i class='bx bx-envelope' ></i></span>
+                <span>rsubbumeena@yahoo.com</span>
+            </div>
+        </div>
+        <div class = "col-right">
+            <div class = "social-icons">
+                <span><a href = "https://www.linkedin.com/in/meenakshi-r-a71296243/" target = "_blank"><i class='bx bxl-linkedin-square'></i></a></span>
+                <span><a href = "https://github.com/MeenakshiRamaS" target = "_blank"><i class='bx bxl-github' ></i></a></span>
+             </div>
+        </div>   
+    </footer>
+
+    <script src = "script.js"></script>
 </body>
 </html>

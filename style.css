@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Maven Pro';
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #ac274f, #ffd9da);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 33, 35, 0.8);
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    
+}
+nav ul a{
+    color: pink;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+nav ul a:hover{
+    opacity: 1;
+}
+
+.btn{
+    padding: 1em 1.5em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+span{
+    background: linear-gradient(to right, #ac274f, #ffd9da);
+    background-clip: text;
+    color: transparent;
+}
+#menu{
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#home img{
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: 0.7;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-of-type(1), .btn-box .btn:nth-of-type(3){
+    background-color: black;
+    border-color: #ffd9da;
+    color: #ffd9da;
+}
+.btn-box .btn:nth-of-type(1):hover, .btn-box .btn:nth-of-type(3):hover{
+    background-color: #ffd9da;
+    border-color: #ac274f;
+    color: black;
+}
+.btn-box .btn:nth-of-type(2){
+    background-color: #ffd9da;
+    border-color: #ac274f;
+    color: black;
+}
+.btn-box .btn:nth-of-type(2):hover{
+    background-color: black;
+    border-color: #ffd9da;
+    color: #ffd9da;
+}
+
+#about{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.about-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: nowrap;
+}
+#about img{
+    width: 20vw;
+    border-radius: 0%;
+    max-width: 300px;
+    margin-top: 3em;
+}
+#about p{
+    color: white;
+    font-size: 1.5em;
+}
+
+#about h1{
+    font-size: 5em;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#about .coursework ul {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Spacing between grid items */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    grid-auto-rows: minmax(10px, auto); /* Set a minimum height for the rows and auto-adjust */
+}
+
+#about .coursework li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border: 2px solid #ac274f;
+    border-radius: 5px;
+    padding: 20px 40px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+#about .coursework li:hover {
+    background-color: #ac274f; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+#about .coursework a {
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Optional: Make text bold */
+}
+
+
+#skills{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.skills-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+}
+
+#skills h1{
+    font-size: 5em;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+#skills .my_skills ul {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Spacing between grid items */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    grid-auto-rows: minmax(10px, auto); /* Set a minimum height for the rows and auto-adjust */
+}
+
+#skills .my_skills li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border: 2px solid #ac274f;
+    border-radius: 5px;
+    padding: 20px 40px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+#skills .my_skills li:hover {
+    background-color: #ac274f; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+#skills .my_skills a {
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Optional: Make text bold */
+}
+
+#projects{
+    background-color: black;
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr; /* Make each box take up its own row */
+    gap: 2em;
+}
+.box{
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box:hover{
+    border: 3px solid rgb(100, 100, 100);
+}
+.box p{
+    opacity: 0.8;
+}
+.box h1{
+    font-size: 2em;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+.box-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: left for image, right for tech list */
+    gap: 2em;
+    align-items: center;
+}
+#projects .box-content .left-col img {
+    width: 100%; /* Ensures the image takes full width of its column */
+    height: auto;
+    border-radius: 0.5em;
+}
+#projects .box-content .right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    height: 100%; /* Make the right column take full height */
+}
+#projects .box-content .right-col h2 {
+    font-size: 1.5em;
+    background-color: linear-gradient(to right, #ac274f, #ffd9da);
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
+.projects-container .tech {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 1em; /* Space between list items */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    list-style-type: none; /* Remove default list styling */
+    margin-top: 15px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30em;
+    bottom: 0;
+    background-color: #3d0b1a;
+    width: 100%;
+    padding: 5em 20%;
+}
+.col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.col-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.col-box i{
+    font-size: 2em;
+}
+.col-box span{
+    font-size: 1.2em;
+}
+
+.col-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+    max-width: 500px;
+}
+.col-right span{
+    font-size: 1.3em;
+}
+.col-right .social-icons{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    gap: 1em;
+}
+.col-right .social-icons i{
+    font-size: 2em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #ac274f, #ffd9da);
+    color: black;
+}
+.social-icons i:hover{
+    color: white;
+}
+
+@media(max-width:970px){
+    section{
+        padding: 8em 15%;
+    }
+    nav .btn{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1em 3em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        display: none;
+    }
+    .links a{
+        margin: 2em 0;
+        display: block;
+        font-size: 1.5em;
+        color: white;
+    }
+    .links.active{
+        display: block;
+    }
+    #home h1{
+        font-size: 4em;
+    }
+    #home h3{
+        font-size: 2em;
+    }
+    #home img{
+        width: 24vw;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #about img{
+        width: 32vw;
+    }
+    #about h1{
+        font-size: 3em;
+    }
+    #about ul{
+        font-size: 1em;
+    }
+}
+
+@media(max-width:770px){
+    #home h1{
+        font-size: 2.5em;
+    }
+    #home h3{
+        font-size: 1.5em;
+    }
+    #home img{
+        width: 32vw;
+    }
+    #about .skills{
+        gap: 3em;
+    }
+    #services .header {
+        font-size: 3em;
+    }
+    #contact .header{
+        font-size: 3em;
+    }
+    #contact .input-box span{
+        font-size: 1.2em;
+    }
+    .input-box input{
+        padding: 0.5em 1em;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 5em;
+        align-items: baseline;
+    }
+}

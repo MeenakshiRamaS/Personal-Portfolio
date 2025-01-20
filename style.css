@@ -153,11 +153,11 @@ section{
     width: 20vw;
     border-radius: 0%;
     max-width: 300px;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 #about p{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #about h1{
@@ -375,18 +375,18 @@ footer{
 .col-right span{
     font-size: 1.3em;
 }
-.col-right .social-icons{
+.social-icons{
     display: flex;
     align-items: baseline;
     justify-content: left;
     gap: 1em;
+    background-color: linear-gradient(to right, #ac274f, #ffd9da);
 }
-.col-right .social-icons i{
+.social-icons i{
     font-size: 2em;
     transition: 0.2s ease-in-out;
     cursor: pointer;
-    background-image: linear-gradient(to right, #ac274f, #ffd9da);
-    color: black;
+    color: transparent;
 }
 .social-icons i:hover{
     color: white;
